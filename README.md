@@ -1,82 +1,84 @@
 # Feed Cleanup Script (For Educational & Testing Purposes Only)
 
-A lightweight JavaScript demo for learning browser-based DOM interaction and automation principles.  
-This script is intended **only for educational use** in safe, controlled, test environments.
+A lightweight JavaScript demo for learning browser-based DOM interaction and automation principles.
+
+> ⚠️ WARNING: This script is intended **solely for educational use in test environments you fully control. Do NOT run this on any third-party site without explicit, written permission.**
 
 ---
 
-## ⚠️ LEGAL DISCLAIMER – READ BEFORE USE
+## ⚖️ LEGAL DISCLAIMER – READ BEFORE USE
 
-This code is provided **"as is"**, without warranty of any kind.  
-By accessing or using this code, **you agree to the following**:
+This code is provided “as is”, without warranty of any kind. By accessing, using, or distributing this code, you agree to the following:
 
-- This tool is for **educational demonstration only**, such as understanding DOM scripting, timing, and automation inside a browser.
-- The author is **not responsible** for any misuse, including but not limited to:
-  - Violations of Terms of Service on third-party websites
-  - Account restrictions, bans, or unexpected behavior
-  - Damage or disruption caused by improper usage
-- **Do NOT** use this code on any website, platform, or service that you do not fully own or have **explicit written permission** to test.
-- This script does **not collect data**, require login credentials, or connect to any backend services or APIs.
-- The author is **not affiliated with or endorsed by** any social media, tech company, or platform.
-- By using this code, **you accept full responsibility**. You break it, you bought it.
+- You understand this tool is meant for **educational demonstration only**, such as learning DOM scripting, delays, and browser automation concepts.
+- The script may **violate Terms of Service** (TOS) on third-party platforms. **Do not use this on Instagram, Facebook, or any website you do not own.**
+- The author is **not responsible** for:
+  - TOS violations
+  - Account suspensions, bans, or restrictions
+  - Platform layout changes that break functionality
+  - Any loss of data, access, or other negative outcomes
+- This tool **does not collect data**, store credentials, or connect to any backend or external API.
+- You assume **full responsibility** for how this code is used. The author **disclaims all liability**, direct or indirect.
+- You use this code **at your own risk**.
+
+> 💥 You break it, you bought it. Use responsibly.
 
 ---
 
 ## 🛠️ Features
 
-- Demonstrates DOM manipulation and event simulation using plain JavaScript
-- Shows how to scroll, detect elements, and simulate clicks
-- Uses randomized delay timers to explore asynchronous browser scripting
-- 100% browser-native — runs directly in DevTools with no third-party tools
+- Demonstrates basic DOM manipulation and event simulation using vanilla JavaScript
+- Includes randomized delays for automation timing practice
+- Runs entirely in-browser (no third-party tools or extensions)
 
 ---
 
-## 🧪 How It Works (Test Environment Only)
+## 🧪 How It Works (In a Safe Test Environment)
 
-This script runs inside your browser’s Developer Console, and:
+- Opens a test webpage
+- Scrolls automatically
+- Detects clickable or interactive elements
+- Simulates user clicks with timed delays
 
-1. Scrolls through a webpage
-2. Detects targetable interactive elements (e.g., buttons or links)
-3. Simulates delayed click interactions for automation learning
-
-⚠️ Again, **only use this on test pages or mock HTML sites** you have full control over.
+**⚠️ Do not use this on live production websites or accounts.**
 
 ---
 
-## ✅ Usage (Demo Page Recommended)
+## ✅ Usage (For Demo Only)
 
-1. Open the included `test-page.html` file in your browser
-2. Open **Developer Tools** (`Ctrl+Shift+I` or `Cmd+Option+I`)
-3. Go to the **Console** tab
+1. Open the included `test-page.html` file in a browser
+2. Open Developer Tools (`Ctrl+Shift+I` / `Cmd+Option+I`)
+3. Go to the Console tab
 4. Paste and run the code from `feed-cleanup-script.js`
 
 ---
 
 ## 📂 Files
 
-- `feed-cleanup-script.js` – JavaScript script that performs safe, DOM-based automation
-- `test-page.html` – A dummy HTML file you can use to safely try out the script
+- `feed-cleanup-script.js` – JavaScript automation demo
+- `test-page.html` – Safe, mock webpage for testing
 - `LICENSE` – MIT License
 
 ---
 
 ## 🎓 Educational Topics Covered
 
-- Safe DOM traversal using JavaScript
-- Event simulation and browser automation
-- Async timing with `setTimeout` and `Promises`
-- Hands-on DevTools scripting
+- JavaScript-based DOM traversal and manipulation
+- Simulated event triggering
+- Timing via `setTimeout` and `Promise`
+- In-browser debugging and testing with DevTools
 
 ---
 
 ## 📄 License
 
-MIT License – Free for **non-commercial**, educational use only.  
-No warranties. No guarantees. **Use at your own risk.**
+MIT License — Free to use, modify, or fork for personal, non-commercial, and **educational purposes only**.
+
+> No warranties. No guarantees. Use at your own risk.
 
 ---
 
 ## 🛡️ Report Misuse
 
-If you find this code being misused or repurposed for activity that violates platform Terms of Service, please report it through GitHub’s content policy tools. This repository is meant strictly for ethical learning and safe development practices.
-
+This project is strictly intended for ethical learning and development.  
+If you observe this code being misused or repurposed for violating platform terms, please report it through GitHub’s abuse report tools.
