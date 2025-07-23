@@ -3,7 +3,7 @@
 A simple JavaScript tool to **bulk unlike Instagram posts** using browser automation. Clean up your Instagram activity history in seconds — no third-party apps or logins required.
 
 
-#🚨 LEGAL DISCLAIMER — READ THIS FIRST
+## 🚨 LEGAL DISCLAIMER — READ THIS FIRST
 
 This script is provided "as is", without any warranty of any kind. By using this code, you agree to the following:
 
