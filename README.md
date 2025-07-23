@@ -1,78 +1,81 @@
-# instagram-auto-mass-unliker
+# Feed Cleanup Script (Educational Use Only)
 
-A simple JavaScript tool to **bulk unlike Instagram posts** using browser automation. Clean up your Instagram activity history in seconds — no third-party apps or logins required.
+A simple JavaScript tool to automate unliking interactions in your browser using safe, client-side scripting.  
+Designed for personal data management and educational demonstration of browser automation.
 
+---
 
-## 🚨 LEGAL DISCLAIMER — READ THIS FIRST
+## LEGAL DISCLAIMER
 
-This script is provided "as is", without any warranty of any kind. By using this code, you agree to the following:
+This script is provided “as is”, without warranty of any kind.
 
-I am not liable for any account issues (bans, blocks, shadowbans, rate-limiting, or anything else).
+By using this script, you agree to the following:
 
-This may violate Instagram’s Terms of Service, and you are solely responsible for how you use it.
+- The author is not responsible for any consequences — including account bans, rate limits, interface changes, or unexpected behavior.
+- This may violate the Terms of Service of platforms you use it on.
+- This is intended for educational use only, such as understanding client-side scripting and DOM automation.
+- Do not use this on platforms you do not own or have explicit permission to test on.
+- The script does not collect data, require login credentials, or interact with any backend/API.
+- The author is not affiliated with or endorsed by any social media platform.
 
-I do not collect data, access your account, or interact with Instagram’s backend or API.
+Use responsibly. You break it, you bought it.
 
-This script simply simulates browser actions that a human can do manually — no hacking, no scraping.
-
-I am not affiliated with, endorsed by, or connected to Instagram or Meta in any way.
-
-You break it? You bought it. I hold zero responsibility.
-
-If Instagram updates their site or policies, this may stop working or result in consequences. That’s on you.
-
+---
 
 ## Features
 
-- Automatically scrolls through your liked posts.
-- Detects and unlikes posts you've previously liked.
-- Includes safe time delays to mimic human behavior.
-- Simple copy-paste into your browser's DevTools Console.
-- No need for login credentials or API access.
+- Scrolls through interactive content like "likes" or saved items.
+- Simulates unliking or removing interactions through DOM manipulation.
+- Includes randomized delays to mimic human behavior.
+- 100% browser-based – no third-party apps, logins, or API keys required.
+
+---
 
 ## How It Works
 
-The script runs inside your browser console and interacts with Instagram’s DOM to find and unlike liked posts.
+The script runs in your browser’s Developer Console.  
+It interacts with the webpage’s DOM — just like a human would — by:
 
-> Note: This only works on the desktop version of Instagram, specifically on the “Posts You’ve Liked” page.
+- Scrolling through content
+- Detecting interactive elements (such as "like" buttons)
+- Clicking them with a delay
 
-## How to Use
+This tool is meant to demonstrate safe browser-side scripting only.
 
-1. Open your browser and go to [Instagram’s “Posts You’ve Liked” page](https://www.instagram.com/).
-2. Press `Ctrl + Shift + I` (or `Cmd + Option + I` on Mac) to open DevTools.
-3. Navigate to the Console tab.
-4. Paste the script from [`instagram-auto-mass-unliker.js`](./instagram-auto-mass-unliker.js) and press Enter.
-5. The script will begin unliking posts automatically.
+---
+
+## Usage (Test Environment Only)
+
+1. Open your browser and navigate to the relevant activity/interactions page.
+2. Press `Ctrl + Shift + I` (Windows/Linux) or `Cmd + Option + I` (Mac) to open Developer Tools.
+3. Go to the Console tab.
+4. Paste the script from `feed-cleanup.js` and press Enter.
+
+The script will begin automating the interaction cleanup process.
+
+---
 
 ## File
 
-- `instagram-auto-mass-unliker.js` – The main script.
+- `feed-cleanup.js` – The main script that performs DOM-based interaction removal.
 
-## Disclaimer
+---
 
-This tool is intended strictly for educational and personal use only. By using this script, you acknowledge and agree to the following:
+## Educational Purpose
 
-I am not responsible for how you choose to use this code.
+This script is intended to teach:
 
-Use at your own risk — this script interacts with Instagram’s interface and may violate their terms of service.
+- DOM traversal and event handling
+- Asynchronous JavaScript behavior using delays
+- Safe client-side scripting inside the browser
+- Developer Console automation
 
-I do not guarantee that it will work with future Instagram updates.
-
-I take no liability for any account restrictions, bans, shadowbans, rate limits, or other consequences resulting from the use of this script.
-
-This is not affiliated with, endorsed by, or connected to Instagram or Meta in any way.
-
-If you break something, lose access, or face any issues — that’s on you, not me.
-
-## SEO Tags
-
-instagram automation, mass unlike instagram, bulk unlike posts, javascript instagram tool, devtools automation, instagram cleanup, browser automation
+---
 
 ## License
 
-MIT License – free for personal and educational use.
+MIT License – free to use for non-commercial and educational purposes only.
 
+Use at your own risk. No warranties, no guarantees, and no liability.
 
-Built to help you clean up your feed quickly and efficiently.
-
-
+---
