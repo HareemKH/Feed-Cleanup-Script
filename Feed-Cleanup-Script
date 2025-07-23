@@ -1,107 +1,64 @@
 /**
- * Instagram Mass Auto-Unliker Script (2025 Edition)
- * --------------------------------------------------
+ * Feed Cleanup Script – DOM Automation Demo (EDUCATIONAL USE ONLY)
+ * ------------------------------------------------------
  * License: MIT
- *
- * Description:
- * This script automates the process of unliking all posts from a user's
- * "Your Activity > Likes" page on Instagram. It operates by selecting
- * multiple liked posts in batches and triggering the "Unlike" action.
- *
- * Usage:
- * 1. Set your Instagram UI language to English.
- * 2. Navigate to: https://www.instagram.com/your_activity/interactions/likes
- * 3. Open your browser's Developer Console:
- *    - Windows/Linux: Ctrl + Shift + J
- *    - macOS: Cmd + Option + J
- * 4. Paste the script into the console and press Enter.
- *
- * Notes:
- * - Works best in Google Chrome.
- * - Be patient with batch processing to avoid Instagram rate-limiting.
- * - The script attempts to scroll and load more liked posts as needed.
- *
- * Disclaimer:
- * This script interacts directly with Instagram’s front-end UI.
- * If Instagram updates its DOM structure, this script may stop functioning.
- * Use responsibly and at your own risk.
+ * 
+ * 🔒 This script is a **learning tool** only.
+ * It demonstrates browser DOM automation using vanilla JavaScript. 
+ * It is NOT intended to be used on any live, production, or third-party platform.
+ * 
+ * ❗Do NOT use on websites you do not own or operate.
+ * ❗This includes Instagram, Facebook, X, TikTok, or similar services.
+ * 
+ * Educational Purposes Only:
+ * - Learn how browser automation works using DevTools and JavaScript
+ * - Understand timing functions, event simulation, and DOM traversal
+ * 
+ * The author assumes **no liability** for misuse, Terms of Service violations, or any damage.
+ * This script does NOT collect data, connect to a backend, or require credentials.
+ * 
+ * 📘 How to Use:
+ * 1. Open a **test page** (e.g., demo-page.html) with buttons or checkboxes
+ * 2. Open the browser console (Ctrl+Shift+I or Cmd+Option+I)
+ * 3. Paste and run this code to observe how DOM interaction works
  */
 
+// LEGAL DEMO: Generic DOM interaction (no real-world platform references)
 (async function () {
-  const UNLIKE_BATCH_SIZE = 100;
-  const DELAY_BETWEEN_ACTIONS_MS = 1500;
-  const DELAY_BETWEEN_CHECKBOX_CLICKS_MS = 300;
-  const MAX_RETRIES = 60;
+  // Educational constants
+  const BATCH_SIZE = 3; // Small batches for visibility
+  const ACTION_DELAY_MS = 1000; // Slow, observable delays
 
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-  const clickElement = async (element) => {
-    if (!element) throw new Error('Element not found');
+  // Utility function (reusable for any project)
+  const clickElement = async (selector) => {
+    const element = document.querySelector(selector);
+    if (!element) throw new Error(`Element "${selector}" not found`);
     element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     element.click();
+    console.log(`Clicked: ${selector}`);
   };
 
-  const scrollAndWaitForMoreLikes = async (previousCount) => {
-    window.scrollTo(0, document.body.scrollHeight);
-    for (let i = 0; i < 10; i++) {
-      await delay(1000);
-      const currentCount = document.querySelectorAll('[aria-label="Toggle checkbox"]').length;
-      if (currentCount > previousCount) return true;
-    }
-    return false;
-  };
-
-  const unlikeSelectedPosts = async () => {
-    try {
-      const unlikeButton = [...document.querySelectorAll('span')].find((el) =>
-        ['Unlike', 'Remove Like'].includes(el.textContent.trim())
-      );
-
-      if (!unlikeButton) throw new Error('Unlike button not found');
-      await clickElement(unlikeButton);
-    } catch (error) {
-      console.error('Error during unliking:', error.message);
+  // Demo: Batch-click checkboxes in a TEST PAGE
+  const batchSelectElements = async () => {
+    for (let i = 0; i < BATCH_SIZE; i++) {
+      await clickElement(`.demo-checkbox:nth-child(${i + 1})`);
+      await delay(300);
     }
   };
 
-  const unlikeActivity = async () => {
-    try {
-      while (true) {
-        const [, selectButton] = document.querySelectorAll('[role="button"]');
-        if (!selectButton) throw new Error('Select button not found');
-        await clickElement(selectButton);
-        await delay(3000);
-
-        let checkboxes = document.querySelectorAll('[aria-label="Toggle checkbox"]');
-        if (checkboxes.length === 0) {
-          const gotMore = await scrollAndWaitForMoreLikes(0);
-          if (!gotMore) {
-            console.log(' No more liked posts to process.');
-            break;
-          }
-          continue;
-        }
-
-        for (let i = 0; i < Math.min(UNLIKE_BATCH_SIZE, checkboxes.length); i++) {
-          await clickElement(checkboxes[i]);
-          await delay(DELAY_BETWEEN_CHECKBOX_CLICKS_MS);
-        }
-
-        await delay(DELAY_BETWEEN_ACTIONS_MS);
-        await unlikeSelectedPosts();
-        await delay(DELAY_BETWEEN_ACTIONS_MS);
-      }
-    } catch (error) {
-      console.error('Error in unlikeActivity:', error.message);
-    }
+  // Demo: Simulate a "submit" action
+  const triggerSubmit = async () => {
+    await clickElement('#demo-submit-btn');
   };
 
-  // Start script
+  // Main execution
   try {
-    console.log("Starting to unlike liked posts...");
-    await unlikeActivity();
-    console.log('All liked posts unliked or none left to unlike.');
+    console.log("Starting educational demo...");
+    await batchSelectElements();
+    await delay(ACTION_DELAY_MS);
+    await triggerSubmit();
+    console.log("Demo complete. Check your test page!");
   } catch (error) {
-    console.error('Fatal error:', error.message);
+    console.error("Error in demo:", error.message);
   }
-})(); 
+})();
