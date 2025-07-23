@@ -51,7 +51,7 @@ This tool is meant to demonstrate safe browser-side scripting only.
 3. Go to the Console tab.
 4. Paste the script from `feed-cleanup.js` and press Enter.
 
-The script will begin automating the interaction cleanup process.
+The script will begin automating the interaction cleanup process. Never run it on a site you do not own.
 
 ---
 
