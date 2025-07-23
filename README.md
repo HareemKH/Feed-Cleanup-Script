@@ -1,81 +1,82 @@
-# Feed Cleanup Script (Educational Use Only)
+# Feed Cleanup Script (For Educational & Testing Purposes Only)
 
-A simple JavaScript tool to automate unliking interactions in your browser using safe, client-side scripting.  
-Designed for personal data management and educational demonstration of browser automation.
-
----
-
-## LEGAL DISCLAIMER
-
-This script is provided “as is”, without warranty of any kind.
-
-By using this script, you agree to the following:
-
-- The author is not responsible for any consequences — including account bans, rate limits, interface changes, or unexpected behavior.
-- This may violate the Terms of Service of platforms you use it on.
-- This is intended for educational use only, such as understanding client-side scripting and DOM automation.
-- Do not use this on platforms you do not own or have explicit permission to test on.
-- The script does not collect data, require login credentials, or interact with any backend/API.
-- The author is not affiliated with or endorsed by any social media platform.
-
-Use responsibly. You break it, you bought it.
+A lightweight JavaScript demo for learning browser-based DOM interaction and automation principles.  
+This script is intended **only for educational use** in safe, controlled, test environments.
 
 ---
 
-## Features
+## ⚠️ LEGAL DISCLAIMER – READ BEFORE USE
 
-- Scrolls through interactive content like "likes" or saved items.
-- Simulates unliking or removing interactions through DOM manipulation.
-- Includes randomized delays to mimic human behavior.
-- 100% browser-based – no third-party apps, logins, or API keys required.
+This code is provided **"as is"**, without warranty of any kind.  
+By accessing or using this code, **you agree to the following**:
 
----
-
-## How It Works
-
-The script runs in your browser’s Developer Console.  
-It interacts with the webpage’s DOM — just like a human would — by:
-
-- Scrolling through content
-- Detecting interactive elements (such as "like" buttons)
-- Clicking them with a delay
-
-This tool is meant to demonstrate safe browser-side scripting only.
+- This tool is for **educational demonstration only**, such as understanding DOM scripting, timing, and automation inside a browser.
+- The author is **not responsible** for any misuse, including but not limited to:
+  - Violations of Terms of Service on third-party websites
+  - Account restrictions, bans, or unexpected behavior
+  - Damage or disruption caused by improper usage
+- **Do NOT** use this code on any website, platform, or service that you do not fully own or have **explicit written permission** to test.
+- This script does **not collect data**, require login credentials, or connect to any backend services or APIs.
+- The author is **not affiliated with or endorsed by** any social media, tech company, or platform.
+- By using this code, **you accept full responsibility**. You break it, you bought it.
 
 ---
 
-## Usage (Test Environment Only)
+## 🛠️ Features
 
-1. Open your browser and navigate to the relevant activity/interactions page.
-2. Press `Ctrl + Shift + I` (Windows/Linux) or `Cmd + Option + I` (Mac) to open Developer Tools.
-3. Go to the Console tab.
-4. Paste the script from `feed-cleanup.js` and press Enter.
-
-The script will begin automating the interaction cleanup process. Never run it on a site you do not own.
+- Demonstrates DOM manipulation and event simulation using plain JavaScript
+- Shows how to scroll, detect elements, and simulate clicks
+- Uses randomized delay timers to explore asynchronous browser scripting
+- 100% browser-native — runs directly in DevTools with no third-party tools
 
 ---
 
-## File
+## 🧪 How It Works (Test Environment Only)
 
-- `feed-cleanup.js` – The main script that performs DOM-based interaction removal.
+This script runs inside your browser’s Developer Console, and:
 
----
+1. Scrolls through a webpage
+2. Detects targetable interactive elements (e.g., buttons or links)
+3. Simulates delayed click interactions for automation learning
 
-## Educational Purpose
-
-This script is intended to teach:
-
-- DOM traversal and event handling
-- Asynchronous JavaScript behavior using delays
-- Safe client-side scripting inside the browser
-- Developer Console automation
+⚠️ Again, **only use this on test pages or mock HTML sites** you have full control over.
 
 ---
 
-## License
+## ✅ Usage (Demo Page Recommended)
 
-MIT License – free to use for non-commercial and educational purposes only.
-
-Use at your own risk. No warranties, no guarantees, and no liability.
+1. Open the included `test-page.html` file in your browser
+2. Open **Developer Tools** (`Ctrl+Shift+I` or `Cmd+Option+I`)
+3. Go to the **Console** tab
+4. Paste and run the code from `feed-cleanup-script.js`
 
 ---
+
+## 📂 Files
+
+- `feed-cleanup-script.js` – JavaScript script that performs safe, DOM-based automation
+- `test-page.html` – A dummy HTML file you can use to safely try out the script
+- `LICENSE` – MIT License
+
+---
+
+## 🎓 Educational Topics Covered
+
+- Safe DOM traversal using JavaScript
+- Event simulation and browser automation
+- Async timing with `setTimeout` and `Promises`
+- Hands-on DevTools scripting
+
+---
+
+## 📄 License
+
+MIT License – Free for **non-commercial**, educational use only.  
+No warranties. No guarantees. **Use at your own risk.**
+
+---
+
+## 🛡️ Report Misuse
+
+If you find this code being misused or repurposed for activity that violates platform Terms of Service, please report it through GitHub’s content policy tools. This repository is meant strictly for ethical learning and safe development practices.
+
