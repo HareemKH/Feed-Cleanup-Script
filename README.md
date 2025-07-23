@@ -55,3 +55,21 @@ MIT License – free for personal and educational use.
 
 Built to help you clean up your feed quickly and efficiently.
 
+
+🚨 LEGAL DISCLAIMER — READ THIS FIRST
+This script is provided "as is", without any warranty of any kind. By using this code, you agree to the following:
+
+I am not liable for any account issues (bans, blocks, shadowbans, rate-limiting, or anything else).
+
+This may violate Instagram’s Terms of Service, and you are solely responsible for how you use it.
+
+I do not collect data, access your account, or interact with Instagram’s backend or API.
+
+This script simply simulates browser actions that a human can do manually — no hacking, no scraping.
+
+I am not affiliated with, endorsed by, or connected to Instagram or Meta in any way.
+
+You break it? You bought it. I hold zero responsibility.
+
+If Instagram updates their site or policies, this may stop working or result in consequences. That’s on you.
+
