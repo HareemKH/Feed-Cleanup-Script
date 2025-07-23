@@ -1,7 +1,6 @@
 /**
  * Instagram Mass Auto-Unliker Script (2025 Edition)
  * --------------------------------------------------
- * Author: HareemKH
  * License: MIT
  *
  * Description:
